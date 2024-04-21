@@ -36,7 +36,7 @@ class _BluetoothpermissionWidgetState extends State<BluetoothpermissionWidget> {
         'bluetoothconnect',
         queryParameters: {
           'isBTEnabled': serializeParam(
-            false,
+            _model.bluetoothEnabled,
             ParamType.bool,
           ),
         }.withoutNulls,
