@@ -75,14 +75,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) => appStateNotifier.loggedIn
           ? const BluetoothpermissionWidget()
-          : const Login1Widget(),
+          : const BluetoothpermissionWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
               ? const BluetoothpermissionWidget()
-              : const Login1Widget(),
+              : const BluetoothpermissionWidget(),
         ),
         FFRoute(
           name: 'controls',
@@ -319,7 +319,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/login';
+            return '/bluetoothpermission';
           }
           return null;
         },

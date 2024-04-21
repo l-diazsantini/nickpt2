@@ -197,14 +197,14 @@ class _BluetoothsenddataWidgetState extends State<BluetoothsenddataWidget> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () async {
-                      context.pushNamed('controls');
+                      context.pushNamed('login1');
                     },
                     child: RichText(
                       textScaler: MediaQuery.of(context).textScaler,
                       text: TextSpan(
                         children: [
                           TextSpan(
-                            text: 'Controls',
+                            text: 'Login',
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(

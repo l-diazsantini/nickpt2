@@ -322,8 +322,7 @@ class _Login1WidgetState extends State<Login1Widget> {
                                       }
 
                                       context.pushNamedAuth(
-                                          'bluetoothpermission',
-                                          context.mounted);
+                                          'controls', context.mounted);
                                     },
                                     text: 'Sign In',
                                     options: FFButtonOptions(
