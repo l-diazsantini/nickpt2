@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "553210109304",
+    "project_id": "livetest-67230",
+    "storage_bucket": "livetest-67230.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553210109304:android:056bfa92c248d57d527c8d",
+        "android_client_info": {
+          "package_name": "com.mycompany.livetest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANVKbQ_rG7k1rNz72DT7YhhYiN1vI-79g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
