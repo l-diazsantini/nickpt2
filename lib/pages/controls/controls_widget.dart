@@ -71,69 +71,72 @@ class _ControlsWidgetState extends State<ControlsWidget> {
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
                         ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Align(
-                              alignment: const AlignmentDirectional(-1.0, 0.0),
-                              child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    32.0, 0.0, 0.0, 0.0),
-                                child: Text(
-                                  'RoboTAMU',
-                                  style: FlutterFlowTheme.of(context)
-                                      .displaySmall
-                                      .override(
-                                        fontFamily: 'Plus Jakarta Sans',
-                                        letterSpacing: 0.0,
-                                      ),
+                        child: SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Align(
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
+                                child: Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      32.0, 0.0, 0.0, 0.0),
+                                  child: Text(
+                                    'RoboTAMU',
+                                    style: FlutterFlowTheme.of(context)
+                                        .displaySmall
+                                        .override(
+                                          fontFamily: 'Plus Jakarta Sans',
+                                          letterSpacing: 0.0,
+                                        ),
+                                  ),
                                 ),
                               ),
-                            ),
-                            Align(
-                              alignment: const AlignmentDirectional(0.0, 1.0),
-                              child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    100.0, 12.0, 0.0, 0.0),
-                                child: InkWell(
-                                  splashColor: Colors.transparent,
-                                  focusColor: Colors.transparent,
-                                  hoverColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onTap: () async {
-                                    context.pushNamed('login1');
-                                  },
-                                  child: RichText(
-                                    textScaler:
-                                        MediaQuery.of(context).textScaler,
-                                    text: TextSpan(
-                                      children: [
-                                        TextSpan(
-                                          text: 'Log Out',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Readex Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                        )
-                                      ],
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Plus Jakarta Sans',
-                                            letterSpacing: 0.0,
-                                          ),
+                              Align(
+                                alignment: const AlignmentDirectional(0.0, 1.0),
+                                child: Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      100.0, 12.0, 0.0, 0.0),
+                                  child: InkWell(
+                                    splashColor: Colors.transparent,
+                                    focusColor: Colors.transparent,
+                                    hoverColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    onTap: () async {
+                                      context.pushNamed('login1');
+                                    },
+                                    child: RichText(
+                                      textScaler:
+                                          MediaQuery.of(context).textScaler,
+                                      text: TextSpan(
+                                        children: [
+                                          TextSpan(
+                                            text: 'Log Out',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Readex Pro',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primary,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                          )
+                                        ],
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Plus Jakarta Sans',
+                                              letterSpacing: 0.0,
+                                            ),
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                       Container(
