@@ -80,18 +80,15 @@ class _BluetoothpermissionWidgetState extends State<BluetoothpermissionWidget> {
         ),
         body: SafeArea(
           top: true,
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              Expanded(
-                child: Container(
-                  width: double.infinity,
-                  height: double.infinity,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).primaryBackground,
-                  ),
-                  child: Align(
-                    alignment: const AlignmentDirectional(0.0, 0.0),
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Align(
+                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  child: Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 300.0, 0.0, 0.0),
                     child: Text(
                       'Requesting Bluetooth permission...\n\n\nAccessing Bluetooth status...',
                       textAlign: TextAlign.center,
@@ -104,8 +101,8 @@ class _BluetoothpermissionWidgetState extends State<BluetoothpermissionWidget> {
                     ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
